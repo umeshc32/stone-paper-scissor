@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+  }
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+
+
+  /* Media Queries for Phones */
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 2.5rem; /* Decrease the header size */
+      height: auto; /* Adjust header height */
+      line-height: normal; /* Reset line height */
+    }
+  
+    .choice {
+      height: 100px; /* Decrease the size of choice buttons */
+      width: 100px;
+    }
+  
+    .choices {
+      flex-direction: column; /* Stack choices vertically */
+      gap: 4.5rem; /* Decrease gap between choices */
+      margin-top: 3rem; /* Adjust margin */
+    }
+  
+    .score-board {
+      font-size: 1.5rem; /* Decrease score font size */
+      gap: 2rem; /* Decrease gap between scores */
+      margin-top: 2rem; /* Adjust margin */
+    }
+  
+    #user-score,
+    #comp-score {
+      font-size: 2.5rem; /* Adjust score font size */
+    }
+  
+    .msg-container {
+      margin-top: 3rem; /* Adjust margin */
+    }
+  
+    #msg {
+      font-size: 1.5rem; /* Decrease message font size */
+      padding: 0.5rem; /* Adjust padding */
+    }
+  }
+  
